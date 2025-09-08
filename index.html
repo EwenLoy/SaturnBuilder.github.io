@@ -9,24 +9,28 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             line-height: 1.6;
-            color: #24292e;
-            background-color: #ffffff;
+            color: #e6edf3;
+            background-color: #0d1117;
             margin: 0 auto;
             padding: 20px;
             max-width: 960px;
         }
         h1, h2, h3 {
-            border-bottom: 1px solid #eaecef;
+            border-bottom: 1px solid #30363d;
             padding-bottom: 0.3em;
         }
         h1 {
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
         h2 {
             margin-top: 24px;
         }
         a {
-            color: #0366d6;
+            color: #58a6ff;
             text-decoration: none;
         }
         a:hover {
@@ -46,32 +50,34 @@
             border-collapse: collapse;
             width: 100%;
             margin-bottom: 16px;
+            background-color: #161b22;
         }
         th, td {
             padding: 6px 13px;
-            border: 1px solid #dfe2e5;
+            border: 1px solid #30363d;
         }
         th {
-            background-color: #f6f8fa;
+            background-color: #161b22;
             font-weight: 600;
         }
         pre {
-            background-color: #f6f8fa;
+            background-color: #161b22;
             border-radius: 6px;
             padding: 16px;
             overflow: auto;
+            border: 1px solid #30363d;
         }
         code {
-            background-color: rgba(27,31,35,0.05);
+            background-color: rgba(110, 118, 129, 0.4);
             padding: 0.2em 0.4em;
             border-radius: 3px;
             font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
             font-size: 85%;
         }
         .important {
-            border-left: 0.25em solid #ffd33d;
+            border-left: 0.25em solid #d29922;
             padding: 0 1em;
-            background-color: #fff8c5;
+            background-color: rgba(187, 128, 9, 0.15);
         }
         .shields {
             display: flex;
@@ -84,23 +90,39 @@
             display: block;
             margin: 0 auto 20px auto;
         }
-        .qr-code {
-            float: right;
-            margin: 0 0 20px 20px;
+        .support-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .support-section img {
+            float: left;
+            margin: 0 20px 20px 0;
         }
         @media (max-width: 768px) {
-            .qr-code {
+            .support-section {
+                flex-direction: column;
+            }
+            .support-section img {
                 float: none;
                 display: block;
                 margin: 0 auto 20px auto;
             }
         }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="center">
-        <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/cd085b32-5d66-4016-b691-272b6631c8b0">
-        <h1>Construct 3 Cordova ZIP to APK Builder</h1>
+        <h1>
+            <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/cd085b32-5d66-4016-b691-272b6631c8b0">
+            Construct 3 Cordova ZIP to APK Builder
+        </h1>
         <img class="logo" width="200" height="200" alt="" src="https://github.com/user-attachments/assets/b427cf12-2630-4aff-8d52-a465ac1397cf">
     </div>
 
@@ -242,9 +264,13 @@ Exception: Cordova build failed with code 1</pre>
         </ul>
 
         <h2>💰 Buy Me a Coffee / ☕ Поддержите школьника:)</h2>
-        <img class="qr-code" width="246" height="246" alt="qr-code" src="https://github.com/user-attachments/assets/23c8c13a-10dd-4507-b84b-8ea11071c769">
-        <p>Support Saturn-Builder! Scan the QR code or click below to buy me a coffee:</p>
-        <p><a href="https://www.donationalerts.com/r/ewenloy">Buy Me a Coffee</a></p>
+        <div class="support-section">
+            <img width="246" height="246" alt="qr-code" src="https://github.com/user-attachments/assets/23c8c13a-10dd-4507-b84b-8ea11071c769">
+            <div>
+                <p>Support Saturn-Builder! Scan the QR code or click below to buy me a coffee:</p>
+                <p><a href="https://www.donationalerts.com/r/ewenloy">Buy Me a Coffee</a></p>
+            </div>
+        </div>
 
         <h2>⭐ Star History</h2>
         <p><a href="https://www.star-history.com/#EwenLoy/Saturn-Builder&Date"><img src="https://api.star-history.com/svg?repos=EwenLoy/Saturn-Builder&type=Date" alt="Star History Chart"></a></p>
