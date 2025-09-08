@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="rn3x0ynUYDEKwcYUpAojekHXi0ZQPEG2psZrYf9Ylgo" />
+    <title>Saturn-Builder - Construct 3 Cordova ZIP to APK Builder</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            background-color: #ffffff;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 960px;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 24px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .center {
+            text-align: center;
+        }
+        .left {
+            text-align: left;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        th, td {
+            padding: 6px 13px;
+            border: 1px solid #dfe2e5;
+        }
+        th {
+            background-color: #f6f8fa;
+            font-weight: 600;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 16px;
+            overflow: auto;
+        }
+        code {
+            background-color: rgba(27,31,35,0.05);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 85%;
+        }
+        .important {
+            border-left: 0.25em solid #ffd33d;
+            padding: 0 1em;
+            background-color: #fff8c5;
+        }
+        .shields {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        .qr-code {
+            float: right;
+            margin: 0 0 20px 20px;
+        }
+        @media (max-width: 768px) {
+            .qr-code {
+                float: none;
+                display: block;
+                margin: 0 auto 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/cd085b32-5d66-4016-b691-272b6631c8b0">
+        <h1>Construct 3 Cordova ZIP to APK Builder</h1>
+        <img class="logo" width="200" height="200" alt="" src="https://github.com/user-attachments/assets/b427cf12-2630-4aff-8d52-a465ac1397cf">
+    </div>
+
+    <div class="shields center">
+        <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/EwenLoy/Saturn-Builder">
+        <img alt="GitHub downloads" src="https://img.shields.io/github/downloads/EwenLoy/Saturn-Builder/total">
+        <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%2010%2F11-blue">
+    </div>
+
+    <div class="left">
+        <h2>📖 What is Saturn-Builder? / Что это?</h2>
+        <p>Saturn-Builder is a friendly app made with Python that helps you build Android apps without complicated setup. It downloads and installs everything you need (like special tools) on its own. Whether you're new to app-making or have some experience, this tool makes it simple to create your own apps for Android!</p>
+        <p>Saturn-Builder - это удобное приложение, которое поможет вам создавать приложения для Android без сложной настройки. Оно самостоятельно загружает и устанавливает все, что вам нужно (например, специальные инструменты). Независимо от того, новичок вы в создании приложений или у вас есть некоторый опыт, этот инструмент упрощает создание ваших собственных приложений для Android!</p>
+
+        <h2>🌟 What Can It Do? / Возможности</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>What It Means</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>🛠️ <strong>Easy Setup</strong></td>
+                    <td>Automatically installs tools you need (~ 1 GB).</td>
+                </tr>
+                <tr>
+                    <td>📱 <strong>Make Apps</strong></td>
+                    <td>Creates APK or AAB files for your Android apps.</td>
+                </tr>
+                <tr>
+                    <td>🌐 <strong>Language Switch</strong></td>
+                    <td>Change the app’s language to English or Russian.</td>
+                </tr>
+                <tr>
+                    <td>📜 <strong>Show Progress</strong></td>
+                    <td>Shows you what’s happening while building.</td>
+                </tr>
+                <tr>
+                    <td>🖥️ <strong>Simple Interface</strong></td>
+                    <td>Easy-to-use screen to control everything.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🛠️ How to Get Started / Как начать</h2>
+        <p>Saturn-Builder works on <strong>Windows 10 or 11</strong>. / Работает на win 10, 11 (windows 7 не пробовал, попробуйте если хотите)</p>
+        <ol>
+            <li>Visit the <a href="https://github.com/EwenLoy/Saturn-Builder/releases/">releases page</a> / Просто скачайте exe со страницы релизов</li>
+            <li>Download the <code>Saturn-Builder.exe</code>.</li>
+            <li>Double-click the file to install and open the app.</li>
+            <li>If you don't want to read the instructions, you can watch the <a href="https://youtu.be/iGbkVkpYeIA">video guide</a> / Если вы не хотите читать инструкции, вы можете посмотреть <a href="https://youtu.be/F3EWrLdfKYM">гайд на YouTube</a></li>
+        </ol>
+
+        <h2>👀 How to use / Как пользоваться</h2>
+        <ol>
+            <li><strong>First start</strong>: / Первый запуск
+                <ul>
+                    <li>After installing, click <code>Saturn-Builder.exe</code> to start.</li>
+                    <li>The first time, it will ask to install some tools. Click <strong>install dependencies</strong> to get started, or <code>Skip for Now</code> if you want to try it later (but you won’t be able to make apps yet).</li>
+                    <li>При первом запуске вам будет предложено установить необходимые зависимости (~1GB), однако если вы откажетесь, приложение не будет работать</li>
+                </ul>
+                <div class="important">
+                    <p><strong>🚨 Важный момент! Saturn-Builder.exe должен быть в английской папке! При использовании в названии папок русских символов ничего работать не будет!</strong></p>
+                    <p>"D:\FOLDER\SaturnBuilder_1.0.exe" ✅</p>
+                    <p>"D:\пака на русском\SaturnBuilder_1.0.exe" ❌</p>
+                </div>
+            </li>
+            <li><strong>Pick a Language after installing dependencies</strong>: / выберите язык интерфейса (если по англ не понимаете)
+                <ul>
+                    <li>Choose English or Russian from a dropdown menu in the app.</li>
+                    <li>The app will change its language right away!</li>
+                </ul>
+            </li>
+            <li><strong>Load Cordova Project (zip) / Android Studio Project / HTML5 Project</strong>: / нажмите кнопку загрузить проект (Load project) ваш zip архив Cordova</li>
+            <li><strong>Choose build type</strong> / Выберете тип сборки
+                <ul>
+                    <li>Debug APK</li>
+                    <li>Unsigned release APK</li>
+                    <li>Unsigned Android App Bundle</li>
+                    <li>Signed debug APK</li>
+                    <li>Signed release APK</li>
+                    <li>Signed Android App Bundle</li>
+                </ul>
+            </li>
+            <li><strong>Build Your App</strong>: / Сборка вашего приложения
+                <ul>
+                    <li>If you need a special key for your app, follow the steps to add it / Если подписанная сборка, подгрузите или создайте ключи</li>
+                    <li>Click <strong>Build</strong> and watch the progress on the screen / Нажмите "Собрать" и ожидайте</li>
+                </ul>
+            </li>
+            <li><strong>Get Your App</strong>: / Получите ваше приложение
+                <ul>
+                    <li>When it’s done, your app files (APK or AAB) will be in your project folder, and the folder will open so you can see them!</li>
+                    <li>Когда сборка закончится, откроется проводник с вашим файлом</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>🚨Possible problems / Возможные проблемы</h2>
+        <p><strong>Убедитесь, что у вас НЕ ИСПОЛЬЗУЕТСЯ КИРИЛЛИЦА (РУС БУКВЫ) в проекте! Иначе получите ошибку:</strong></p>
+        <p><strong>Make sure that you DO NOT USE CYRILLIC LETTERS in your project! Otherwise you will get an error:</strong></p>
+        <pre>[19:06:24] ❌ Command finished with code 1
+
+[19:06:24] ❌ Error: Cordova build failed with code 1
+
+[19:06:24] Traceback (most recent call last):
+  File "main.py", line 1902, in _build_thread
+  File "main.py", line 1966, in _build_cordova
+Exception: Cordova build failed with code 1</pre>
+        <p>✅ Solution: rename all files and names to English, including icons<br>✅ Решение: переименуйте все файлы и названия на английский, включая значки</p>
+        <div class="important">
+            <p><strong>🚨 Важный момент Saturn-Builder.exe должен быть в английской папке! При использовании в названии папок русских символов ничего работать не будет!</strong></p>
+            <p>"D:\FOLDER\SaturnBuilder_1.0.exe" ✅</p>
+            <p>"D:\пака на русском\SaturnBuilder_1.0.exe" ❌</p>
+        </div>
+
+        <h2>🛠️ What It Needs / Что использует</h2>
+        <p>Saturn-Builder downloads these tools automatically:</p>
+        <ul>
+            <li><strong>Node.js</strong>: Helps run the app-making process.</li>
+            <li><strong>JDK 17</strong>: A tool to prepare your app for Android.</li>
+            <li><strong>Android SDK</strong>: Tools to build Android apps.</li>
+            <li><strong>Gradle</strong>: Helps put everything together.</li>
+            <li><strong>Cordova CLI</strong>: Makes apps from web projects.</li>
+        </ul>
+        <p>❗You’ll need about 1 GB of space for all this❗</p>
+
+        <h2>📬 Contact Us / Связь со мной (или нет)</h2>
+        <ul>
+            <li><strong>GitHub</strong>: <a href="https://github.com/EwenLoy">@EwenLoy</a></li>
+            <li><strong>Email</strong>: <a href="mailto:ewenloy@gmail.com">ewenloy@gmail.com</a></li>
+            <li><strong>Youtube</strong>: <a href="https://www.youtube.com/@EwenLoy">@EwenLoy</a></li>
+            <li><strong>Telegram</strong>: <a href="https://t.me/saturnbuilder">SaturnBuilder</a></li>
+            <li><strong>Facebook</strong>: Soon</li>
+            <li><strong>Discord</strong>: Soon</li>
+            <li><strong>X (Twitter)</strong>: <a href="https://x.com/EwenLoy">@EwenLoy</a></li>
+        </ul>
+
+        <h2>💰 Buy Me a Coffee / ☕ Поддержите школьника:)</h2>
+        <img class="qr-code" width="246" height="246" alt="qr-code" src="https://github.com/user-attachments/assets/23c8c13a-10dd-4507-b84b-8ea11071c769">
+        <p>Support Saturn-Builder! Scan the QR code or click below to buy me a coffee:</p>
+        <p><a href="https://www.donationalerts.com/r/ewenloy">Buy Me a Coffee</a></p>
+
+        <h2>⭐ Star History</h2>
+        <p><a href="https://www.star-history.com/#EwenLoy/Saturn-Builder&Date"><img src="https://api.star-history.com/svg?repos=EwenLoy/Saturn-Builder&type=Date" alt="Star History Chart"></a></p>
+
+        <h2>📜 License</h2>
+        <p>This project uses the MIT License. Check <a href="LICENSE">LICENSE</a> for more info.</p>
+
+        <h2>🔍 Search Keywords</h2>
+        <ul>
+            <li>Construct 3 to APK</li>
+            <li>Cordova APK builder</li>
+            <li>Convert HTML5 to Android</li>
+            <li>No code Android builder</li>
+            <li>Construct 3 export Android</li>
+        </ul>
+    </div>
+</body>
+</html>
