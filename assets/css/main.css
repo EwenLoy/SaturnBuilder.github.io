@@ -36,7 +36,7 @@ body{
 .blob{ 
   position:absolute; 
   /* filter: blur(70px) saturate(120%); -- УДАЛЕНО */
-  opacity:0.38; /* чуть ниже чем было для баланса без blur */
+  opacity:0.38; 
   mix-blend-mode:screen; 
   transform: translate3d(0,0,0); 
   will-change: transform, opacity; 
