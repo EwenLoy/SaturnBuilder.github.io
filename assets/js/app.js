@@ -11,7 +11,7 @@
         badgeFeature1: "Auto-install deps",
         badgeFeature2: "Fast builds",
         badgeFeature3: "Multi-language",
-        releaseNoteShort: "v1.5.0 — Portuguese localization, HTML5 plugins",
+        releaseNoteShort: "уровень API обновлён до последней версии, добавлено несколько новых кнопок",
         heroNote: "Нажмите «Скачать», чтобы получить установщик. Программа самостоятельно установит зависимости (~1 ГБ).",
         demoCaption: "Демо: процесс автоматической сборки APK",
         navWhat: "Что такое?",
@@ -86,7 +86,7 @@
         badgeFeature1: "Auto-install deps",
         badgeFeature2: "Fast builds",
         badgeFeature3: "Multi-language",
-        releaseNoteShort: "v1.5.0 — Portuguese localization, HTML5 plugins",
+        releaseNoteShort: "v1.6.0 — API level updated to the latest, several new buttons added",
         heroNote: "Click Download to get the installer. The app will auto-install dependencies (~1 GB).",
         demoCaption: "Demo: automated APK build process",
         navWhat: "What is it?",
@@ -161,7 +161,7 @@
         badgeFeature1: "Auto-install deps",
         badgeFeature2: "Builds rápidos",
         badgeFeature3: "Multi-idioma",
-        releaseNoteShort: "v1.5.0 — localização PT, suporte plugins HTML5",
+        releaseNoteShort: "v1.6.0 — nível da API atualizado para o mais recente, adicionados vários novos botões",
         heroNote: "Clique em Baixar para obter o instalador. O app instalará automaticamente as dependências (~1 GB).",
         demoCaption: "Demonstração: processo automatizado de build de APK",
         navWhat: "O que é?",
@@ -363,7 +363,7 @@
     function fillInitialAlts(){ const lang = localStorage.getItem('saturn_lang') || savedLang; const dict = translations[lang]; document.querySelectorAll('[data-i18n-alt]').forEach(el=>{ const key = el.getAttribute('data-i18n-alt'); if(key && dict && dict[key]) el.alt = dict[key]; }); }
     fillInitialAlts();
     // central download/hrefs
-    const downloadUrl = "https://github.com/EwenLoy/Saturn-Builder/releases/download/v1.5.0_betta_release/SaturnBuilder_1.5.exe";
+    const downloadUrl = "https://github.com/EwenLoy/Saturn-Builder/releases/download/v1.6.0_betta_release/SaturnBuilder_1.6.exe";
     ['downloadMainBtn','downloadBtnLarge'].forEach(id=>{
       const el = document.getElementById(id);
       if(el) el.href = downloadUrl;
