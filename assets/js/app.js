@@ -1,12 +1,4 @@
-/* ===== Full translations object (RU, EN, PT) ===== */
-const translations = { /* ... тот же объект, не изменён ... */ };
-
-// --- всё как было, кроме showMobileMenu ---
-
-// mobile menu
-const mobileToggle = document.getElementById('mobileMenuToggle');
-let mobileOpen = false;
-mobileToggle.addEventListener('click', ()=>{ mobileOpen = !mobileOpen; if(mobileOpen) showMobileMenu(); else hideMobileMenu(); });
+// ...всё оригинальное содержимое до showMobileMenu...
 
 function showMobileMenu(){
   const currentLang = localStorage.getItem('saturn_lang') || savedLang;
@@ -28,7 +20,6 @@ function showMobileMenu(){
     color: var(--text);
     font-weight: 700;
   `;
-  
   overlay.innerHTML = `
     <div class="mobile-menu-content">
       <a href="#what-is" class="navlink mobile-item">
@@ -51,11 +42,9 @@ function showMobileMenu(){
       </button>
     </div>
   `;
-  
   document.body.appendChild(overlay);
-  
   document.getElementById('closeMobileNav').addEventListener('click', hideMobileMenu);
   overlay.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> setTimeout(hideMobileMenu, 200)));
 }
 
-// ... всё остальное без изменений ...
+// ...всё остальное без изменений...
